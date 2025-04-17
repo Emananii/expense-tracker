@@ -1,10 +1,10 @@
-/* Layout */
+
 .app-layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* Header */
+
 header {
   background-color: #1f1f1f;
   padding: 1.5rem;
@@ -15,7 +15,7 @@ header {
   border-bottom: 1px solid #2c2c2c;
 }
 
-/* Sidebar */
+
 .sidebar {
   width: 320px;
   background-color: #181818;
@@ -23,7 +23,7 @@ header {
   border-right: 1px solid #2c2c2c;
 }
 
-/* Main content area */
+
 .main-content {
   flex: 1;
   padding: 2rem;
@@ -31,7 +31,7 @@ header {
   overflow-y: auto;
 }
 
-/* Form fields */
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -60,11 +60,11 @@ select:focus {
   border-color: #4f9eea;
 }
 
-/* Button */
+
 button {
-  background-color: #2563eb;
+  background-color: #0d437a;
   color: white;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -77,7 +77,7 @@ button:hover {
   background-color: #1e40af;
 }
 
-/* Expense Table */
+
 .expense-table {
   width: 100%;
   border-collapse: collapse;
@@ -104,7 +104,7 @@ button:hover {
   color: #e0e0e0;
 }
 
-/* Search bar */
+
 .search-input {
   width: 100%;
   margin-bottom: 1.5rem;

@@ -4,7 +4,7 @@ import AmountInput from "./AmountInput.jsx";
 import DateInput from "./DateInput.jsx";
 
 function Form({ onAddExpense }) {
-  const [formData, setFormData] = useState({ //I've set the initial state of the form to empty
+  const [formData, setFormData] = useState({ //I've set the initial state of the form to empty values
     name: "",
     description: "",
     category: "",
@@ -13,9 +13,10 @@ function Form({ onAddExpense }) {
   });
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { name, value } = event.target; //same as saying const name=event.target.name but shorter
+    
     setFormData((prev) => ({
-      ...prev,
+      ...prev, //first preserve everything as it is using the spread operator or else things break down
       [name]: value,
     }));
   }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function ExpenseTable({ expenses, onDeleteExpense }) {
     if (expenses.length === 0) {
-      return <p>No expenses to display.</p>;
+      return <p>No expenses to display.</p>;//for the default view
     }
   
     return (
@@ -10,8 +10,8 @@ function ExpenseTable({ expenses, onDeleteExpense }) {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Description</th>
-            <th>Category</th>
+            <th><button>Description</button></th>
+            <th><button>Category</button></th>
             <th>Amount</th>
             <th>Date</th>
             <th>Actions</th>

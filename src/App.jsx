@@ -11,7 +11,7 @@ function App() {
   const [expenses, setExpenses] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("category"); //sorting by category
-  const [sortOrder, setSortOrder] = useState("asc"); //sorting order is ascending
+  const [sortOrder, setSortOrder] = useState("asc"); //initial sorting order is ascending
 
 
   function handleAddExpense(expense) {
